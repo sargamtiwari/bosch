@@ -83,6 +83,8 @@ def hello():
   data = data.transpose()
   data.columns = colgp
   return (data.to_json())
+if __name__=='__main__' :
+    app.run(host='0.0.0.0')
 
 
 
