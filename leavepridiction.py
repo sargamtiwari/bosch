@@ -33,7 +33,7 @@ def hello():
 
   model = VAR(endog=traingp)
   model_fit = model.fit()
-  prediction = model_fit.forecast(model_fit.y, steps=12)
+  prediction = model_fit.forecast(model_fit.y, steps=6)
   predgroup= scaler.inverse_transform(prediction)
   pred_group_manager= pd.DataFrame(index=range(0,len(predgroup)),columns=[colgp])  
 
